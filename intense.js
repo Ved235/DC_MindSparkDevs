@@ -459,5 +459,5 @@ var Intense = (function() {
   });
 })();
 
-
+//intense.j
 export default Intense;
