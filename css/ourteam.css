@@ -1,6 +1,6 @@
 @font-face {
   font-family: Sailec;
-  src: url(/SailecMedium.ttf);
+  src: url(../public/SailecMedium.ttf);
 }
 
 body {

@@ -2,7 +2,7 @@
 @font-face {
   /* -- set fonts -- */
   font-family: Sailec;
-  src: url(/SailecBold.ttf);
+  src: url(../public/SailecBold.ttf);
 }
 body {
   height: 100vh;

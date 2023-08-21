@@ -10,7 +10,7 @@ header{
     width:15rem;
     background-size:contain;
     background-repeat: no-repeat;
-    background-image: url("/images/logo.png");
+    background-image: url("../public/images/logo.png");
     top:-1rem;
     margin-left: 2rem;
     z-index: 1001;
@@ -164,7 +164,7 @@ header{
 }
 #nav_image{
     background-size:cover;
-    background-image: url("/images/tesla.jpg");
+    background-image: url("../public/images/tesla.jpg");
     transition: all .3s ease-in-out;
     width:20rem;
     height:25rem;
