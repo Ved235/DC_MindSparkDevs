@@ -1,4 +1,4 @@
-//how to import intense from intense.js
+
 import Intense from './intense.js';
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -59,7 +59,7 @@ window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
 var elements = document.querySelectorAll( '.image' );
-console.log(elements)
+
 
 Intense( elements );
 });

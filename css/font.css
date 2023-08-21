@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Sailec;
+  src: url(/SailecMedium.ttf);
+}
+body {
+
+  font-family: "Sailec";
+}

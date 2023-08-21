@@ -1,6 +1,6 @@
 x = 0;
 function menu_pressed() {
-    console.log("hi");
+
     scale = 0;
     if(screen.width > screen.height)
     {
@@ -9,7 +9,7 @@ function menu_pressed() {
     else{
         scale = screen.height *1.2;
     }
-    console.log(scale)
+
     if(x == 0)
     {
         document.getElementById("circle_zoom").style = "transform:scale("+scale +"); ";
