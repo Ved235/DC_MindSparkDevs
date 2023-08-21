@@ -310,47 +310,47 @@ var Intense = (function() {
     };
     if(imageSource == "https://teslasciencecenter.org/wp-content/uploads/2018/08/Smiljan_home_church.jpg")
     {
-      image.src="../images/birthtextokk.png"
+      image.src="./images/birthtextokk.png"
     }
     else if(imageSource == "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tesla_Egg_of_Columbus_at_1893_World_Fair_Chicago_ELECTRICAL_EXPERIMENTER_March_1_1919.png/1280px-Tesla_Egg_of_Columbus_at_1893_World_Fair_Chicago_ELECTRICAL_EXPERIMENTER_March_1_1919.png")
     {
-      image.src="../images/rott(1).png"
+      image.src="./images/rott(1).png"
     }
     else if(imageSource == "https://www.teslasociety.com/pictures/bday17.jpg")
     {
-      image.src="../images/acg(1).png"
+      image.src="./images/acg(1).png"
     }
     else if(imageSource == "https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000xAny/2/4/1/522241_c0345133tesla_coil_experiment_1899_951849.jpg")
     {
-      image.src="../images/tc(1)(1).png"  
+      image.src="./images/tc(1)(1).png"  
     }
     else if(imageSource == "https://th.bing.com/th/id/OIG.zcwjAl0TRzjiQbA4zvsR?pid=ImgGn")
     {
-      image.src="../images/wc(1)(1).png"
+      image.src="./images/wc(1)(1).png"
     }
     else if(imageSource == "https://th.bing.com/th/id/OIG.Xlm2JOL7Y0LxIfcLaO0C?pid=ImgGn")
     {
-      image.src="../images/c(1)(1).png"
+      image.src="./images/c(1)(1).png"
     }
     else if(imageSource == "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tesla%27s_Turbine.jpg/1200px-Tesla%27s_Turbine.jpg")
     {
-      image.src="../images/tt(1)(1).png"
+      image.src="./images/tt(1)(1).png"
     }
     else if(imageSource == "https://th.bing.com/th/id/OIG.mV3srmJFchoSFaaoYZnT?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn")
     {
-      image.src="../images/ex(1)(1).png"
+      image.src="./images/ex(1)(1).png"
     }
     else if(imageSource == "https://img.atlasobscura.com/hHCVcYQqhjhodQ8toxb7PV8ni9VS2G3Wmixhy_vtA1E/rs:fill:12000:12000/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy84YmQxNzNhYy00/NDljLTQ1MTktYmEx/MS1kYTNjYmI2ODBj/MTUwMTBmZGNiNjRj/YmVkODdmMTBfR2V0/dHlJbWFnZXMtNTE1/NDU2MTQ0LmpwZw.jpg")
     {
-      image.src="../images/wce1.jpg"
+      image.src="./images/wce1.jpg"
     }
     else if(imageSource == "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-021-23009-y/MediaObjects/41467_2021_23009_Fig1_HTML.png")
     {
-      image.src="../images/vc2.jpg"
+      image.src="./images/vc2.jpg"
     }
     else if(imageSource == "https://allthatsinteresting.com/wordpress/wp-content/uploads/2021/04/nikola-tesla-death-notice.png")
     {
-      image.src="../images/d1.jpg"
+      image.src="./images/d1.jpg"
     }
     else
     {
