@@ -37,5 +37,5 @@ function menu_pressed() {
 }
 
 function hover(a){
-    document.getElementById('nav_image').style =  'background-image: url("../public/images/' + a + '.jpg")';
+    document.getElementById('nav_image').style =  'background-image: url("./public/images/' + a + '.jpg")';
 }
