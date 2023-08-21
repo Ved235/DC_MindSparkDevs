@@ -1,9 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&family=Poppins:wght@300&family=Ubuntu&display=swap');
+@font-face {
+  /* -- set fonts -- */
+  font-family: Sailec;
+  src: url(/SailecBold.ttf);
+}
 
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #352F44;
+  background-color: #181212;
   margin: 0rem;
   overflow: hidden;
 }
@@ -13,7 +18,7 @@ body {
   gap: 4vmin;
   position: absolute;
   left: 5%;
-  top: 60%;
+  top: 60vh;
   transform: translate(0%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
 }
@@ -25,13 +30,32 @@ body {
   object-position: center;
 }
 
-.image-caption {
-  font-size: 14px;
-  margin-top: 5px;
+h2{
+  font-family: Sailec;
+  color:white;
+  width:41vh;
+  text-align: center;
 }
 
-.image-text {
-  font-size: 12px;
-  color: #666;
+#image-track > div::before{
+  position: absolute;
+  content: '';
+  background-color: rgb(255, 255, 255);
+  width: calc(41vh + 4vmin + 1rem);
+  height: .3rem;
+  bottom: .5rem;
+  border-radius: .3rem;
+  
+}
+#image-track > div::after{
+  
+  position: absolute;
+  content: '';
+  background-color: rgb(255, 255, 255);
+  width: .3rem;
+  height: 1rem;
+  transform: translateX(20.5vh);
+  bottom: .2rem;
+  border-radius: .2rem;
 }
 

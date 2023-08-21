@@ -4,111 +4,73 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, minimum-scale=1.0">
         <title>About Nikola Tesla</title>
+        <!-- Font Awesome icons-->
+        
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!----- import css ------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/tesla.css" rel="stylesheet" />
         <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/tesla.css" />
- 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body id="page-top">    
+    <body id="page-top">
         <!----- header ------->
-        <header>
-            <div class="logo">
-            </div>
-            <div class="menu">
-                <!----- header buttons for closing and opening it ------->
-                <i class="fa-sharp fa-solid fa-bars fa-2xl" id="bars" onclick="menu_pressed()"></i>
-                <i class="fa-solid fa-xmark fa-2xl" id="cross" onclick="menu_pressed()"></i>
+    <header>
+        <div class="logo">
+        </div>
+        <div class="menu">
+            <!----- header buttons for closing and opening it ------->
+            <i class="fa-sharp fa-solid fa-bars fa-2xl" id="bars" onclick="menu_pressed()"></i>
+            <i class="fa-solid fa-xmark fa-2xl" id="cross" onclick="menu_pressed()"></i>
 
-            </div>
-            <!----- header background ------->
-            <div id="circle_zoom"></div>
+        </div>
+        <!----- header background ------->
+        <div id="circle_zoom"></div>
 
-            <!----- navbar ------->
-            <div class="navbar" id="navbar">
-                <div id="nav_cont">
+        <!----- navbar ------->
+        <div class="navbar" id="navbar">
+            <div id="nav_cont">
 
-                    <div id="up3">
-                        <div id="nav_image"></div>
-                    </div>
-
-                    <div id="up2">
-                        <ul id="nav_elements1">
-                            <li onmouseenter="hover('tesla')"><a href="index.html" class="nav_link"
-                                    >Home</a></li>
-                            <li onmouseenter="hover('tesla')"><a href="tesla.html" class="nav_link">About Tesla</a></li>
-                            <li onmouseenter="hover('tesla')"><a href="Timeline.html" class="nav_link" style="color:white;">Timeline</a></li>
-                            <li onmouseenter="hover('us')"><a href="ourteam.html" class="nav_link">Our Team</a></li>
-                        </ul>
-                    </div>
-
-                    <div id="up1">
-                        <ul id="nav_elements">
-                            <li onmouseenter="hover('tesla_coil')"><a href="/inventions/teslacoil.html" class="nav_link"
-                                    id="tesla_coil" >Tesla Coil</a></li>
-                            <li onmouseenter="hover('tesla_turbine')"><a href="/inventions/teslaturbine.html"
-                                    class="nav_link" id="tesla_turbine" >Tesla Turbine</a></li>
-                            <li onmouseenter="hover('world_of_ac')"><a href="/inventions/acpower.html" class="nav_link"
-                                    id="world_of_ac">The World of AC power</a></li>
-                            <li onmouseenter="hover('induction_motor')"><a href="/inventions/inductionmotor.html"
-                                    class="nav_link" id="induction_motor">Induction Motor</a></li>
-                            
-                        </ul>
-                    </div>
-
+                <div id="up3">
+                    <div id="nav_image"></div>
                 </div>
-            </div>
-        </header>    
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Learn more about</div>
-                <div class="masthead-heading text-uppercase">Nikola Tesla</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Life</h2>
-                    <h3 class="section-subheading text-muted">Early Life, Middle Age and Late Life</h3>
+
+                <div id="up2">
+                    <ul id="nav_elements1">
+                        <li onmouseenter="hover('tesla')"><a href="index.html" class="nav_link"
+                                >Home</a></li>
+                        <li onmouseenter="hover('tesla')"><a href="tesla.html" class="nav_link" style="color:white;">About Tesla</a></li>
+                        <li onmouseenter="hover('tesla')"><a href="Timeline.html" class="nav_link" >Timeline</a></li>
+                        <li onmouseenter="hover('us')"><a href="ourteam.html" class="nav_link" >Our Team</a></li>
+                    </ul>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-cake-candles fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Early Life</h4>
-                        <p class="text-muted">Nikola Tesla's early life was marked by his insatiable curiosity and fascination with electricity. Growing up in Smiljan, Croatia, he displayed an extraordinary ability to visualize and conceptualize inventions, laying the groundwork for his groundbreaking contributions to modern science.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-bolt fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Middle Life</h4>
-                        <p class="text-muted">
-                            In his midlife, Nikola Tesla immigrated to the United States, collaborating with influential figures such as Thomas Edison and George Westinghouse. He pioneered advancements in alternating current (AC) electricity, wireless transmission, and numerous other technologies that laid the foundation for modern power systems and communication networks.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-skull fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Late Life</h4>
-                        <p class="text-muted">In his later years, Nikola Tesla faced financial struggles and embarked on ambitious projects like the Wardenclyffe Tower, which remained unfinished. Despite challenges, he continued to envision groundbreaking ideas. Tesla passed away on January 7, 1943, in New York City, leaving behind a legacy that forever shaped the realms of science and innovation.</p>
-                    </div>
+
+                <div id="up1">
+                    <ul id="nav_elements">
+                        <li onmouseenter="hover('tesla_coil')"><a href="/inventions/teslacoil.html" class="nav_link"
+                                id="tesla_coil" >Tesla Coil</a></li>
+                        <li onmouseenter="hover('tesla_turbine')"><a href="/inventions/teslaturbine.html"
+                                class="nav_link" id="tesla_turbine" >Tesla Turbine</a></li>
+                        <li onmouseenter="hover('world_of_ac')"><a href="/inventions/acpower.html" class="nav_link"
+                                id="world_of_ac">The World of AC power</a></li>
+                        <li onmouseenter="hover('induction_motor')"><a href="/inventions/inductionmotor.html"
+                                class="nav_link" id="induction_motor">Induction Motor</a></li>
+                        
+                    </ul>
                 </div>
+
             </div>
-        </section>
+        </div>
+    </header>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section" id="portfolio" style="background-color: #333333;">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Major Events</h2>
-                    <h3 class="section-subheading text-muted">6 Major Events of Nikola Tesla's Life</h3>
+                    <h2 class="section-heading text-uppercase" style="color: white;">About Nikola Tesla</h2>
+                    <h3 class="section-subheading" style="color: white;">6 Major Events of Nikola Tesla's Life</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -163,7 +125,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="https://th.bing.com/th/id/OIG.01TE.HHVDW00GpljLWOe?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
+                                <img class="img-fluid" src="https://th.bing.com/th/id/OIG.hxbXbh.8L7Sk7hQ0dLWU?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Wardenclyffe Vision Unleashed</div>
@@ -178,7 +140,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="https://th.bing.com/th/id/OIG.jxsY2413Hd.NqF.E55So?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
+                                <img class="img-fluid" src="https://th.bing.com/th/id/OIG.01TE.HHVDW00GpljLWOe?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Electromagnetic Resonance Experiments</div>
@@ -204,28 +166,24 @@
                 </div>
             </div>
         </section>
-
-    <!-- Portfolio Modals-->
+        <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="public/images/close_icon.svg" alt="Close modal" /></div>
-                    <div class="container">
+
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Early Curiosity and Exploration</h2>
-                                    <p class="item-intro text-muted">1856 - 1870s</p>
+                                    <p class="item-intro text-muted">1856 - 1970s</p>
                                     <img class="img-fluid d-block mx-auto" src="https://th.bing.com/th/id/OIG.LPIeT5KgodyDMzNo8IDl?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
                                     <p>Tesla's childhood curiosity and innate ability to visualize concepts set the stage for his journey into science and innovation. Growing up in Smiljan, Croatia, his unique perspective on the natural world laid the foundation for his later accomplishments.</p>
-                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
-
                             </div>
                         </div>
 
@@ -237,7 +195,6 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="public/images/close_icon.svg" alt="Close modal" /></div>
-
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
 
@@ -250,10 +207,8 @@
                                         <i class="fas fa-xmark me-1"></i>
                                         Close
                                     </button>
-
                             </div>
                         </div>
-
                 </div>
             </div>
         </div>
@@ -337,28 +292,31 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="public/images/close_icon.svg" alt="Close modal" /></div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Legacy and Enduring Influence</h2>
-                                <p class="item-intro text-muted">Posthumous</p>
-                                <img class="img-fluid d-block mx-auto" src="https://th.bing.com/th/id/OIG.E0Fd7zPbdV2fhMLrIsgO?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
-                                <p>Tesla's legacy endures as a testament to his brilliance and foresight. Despite his passing, his ideas continue to shape modern technology, from electricity and communication to renewable energy solutions, leaving an indelible mark on the world.</p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                    <i class="fas fa-xmark me-1"></i>
-                                    Close
-                                </button>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Legacy and Enduring Influence</h2>
+                                    <p class="item-intro text-muted">Posthumous</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://th.bing.com/th/id/OIG.E0Fd7zPbdV2fhMLrIsgO?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="..." />
+                                    <p>Tesla's legacy endures as a testament to his brilliance and foresight. Despite his passing, his ideas continue to shape modern technology, from electricity and communication to renewable energy solutions, leaving an indelible mark on the world.</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+
+                            </div>
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>
-
+        
     </body>
-           
     <!----- import js files ------->
     <!----- js for header animations ------->
     <script src="header.js"></script>
-        <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

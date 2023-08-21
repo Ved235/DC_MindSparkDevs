@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&family=Poppins:wght@300&family=Ubuntu&display=swap');
 @font-face {
-    font-family: Sailec;
-    src: url(/SailecMedium.ttf);
-  }
+  /* -- set fonts -- */
+  font-family: Sailec;
+  src: url(/SailecBold.ttf);
+}
 body{
     margin: 0;
     overflow-x: hidden;
@@ -28,6 +30,33 @@ body{
     position: relative;
     bottom:5vh;
    display: flex;
+   animation: slideInTop .5s ease-out 0s;
+   z-index: 50;
+}
+
+
+/*on load animation for box */
+
+@keyframes slideInTop {
+    0% {
+        scale: 1;
+      transform: translateY(-100%);
+    }
+    100% {
+        scale: 1;
+      transform: translateX(0);
+    }
+}
+@keyframes slideIn {
+    0% {
+      transform: translate(35rem , -350%);
+    }
+    50% {
+      transform: translate(35rem,0);
+    }
+    100% {
+        transform: translate(0,0);
+      }
 }
 
 .backdrop > .tesla_coill{
@@ -47,7 +76,7 @@ body{
 }
 
 .backdrop > .tesla_ac{
-    background-image: url("../public/images/ac_power_1.png");
+    background-image: url("../public/images/ac_power_1_low.png");
     width: 30rem;
     height:90vh;
     background-size: cover;
@@ -66,6 +95,11 @@ body{
 
 /* text */
 .text{
+    
+    
+    animation: slideIn .8s ease-in-out ;
+    animation-fill-mode: backwards;
+    z-index: 49;
     font-family: Sailec;
     color: white;
     width: 30rem; 
