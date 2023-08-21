@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&family=Poppins:wght@300&family=Ubuntu&display=swap');
+@font-face {
+  /* -- set fonts -- */
+  font-family: Sailec;
+  src: url(/SailecBold.ttf);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+ /* -- css for sliding screen -- */
+  .parallax {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .slide-1 {
+    left: 0;
+  }
+  
+  .slide-2 {
+    left: 100%;
+  }
+  
+  .slide-3 {
+    left: 200%;
+    
+  }
+  .slide-4 {
+    left: 300%;
+  }
+  .slide-5 {
+    left: 400%;
+  }
+
+  /*slide wrapper css */
+  .structure-screen {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFBA00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* css for bottom slider */
+  .parallax-pagination {
+    z-index: 999;
+    position: absolute;
+    left: calc(50vw - 88px);
+    bottom: 30px;
+    display: flex;
+  
+  }
+  .parallax-pagination label {
+    display: inline-block;
+    margin: 0 8px;
+    width: 20px;
+    height: 8px;
+    background-color: #ffffff83;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+  }
+  
+  /* slection effect */
+  .slide-radio1:checked ~ .parallax-pagination .page1,
+  .slide-radio2:checked ~ .parallax-pagination .page2,
+  .slide-radio3:checked ~ .parallax-pagination .page3,
+  .slide-radio4:checked ~ .parallax-pagination .page4,
+  .slide-radio5:checked ~ .parallax-pagination .page5{
+    background: rgb(255, 255, 255);
+  }
+  
+  /* slide the pages */
+  .slide-radio1:checked ~ .slider {
+    transform: translateX(0%);
+  }
+  .slide-radio2:checked ~ .slider {
+    transform: translateX(-100%);
+  }
+  .slide-radio3:checked ~ .slider {
+    transform: translateX(-200%);
+  }
+  .slide-radio4:checked ~ .slider {
+    transform: translateX(-300%);
+  }
+  .slide-radio5:checked ~ .slider {
+    transform: translateX(-400%);
+  }
+  .slider {
+    top: 0;
+    transition: transform 1500ms ease-in-out;
+    transform: scale(1);
+  }
+
+  /* texts for the slides */
+  #text1{
+    position: relative;
+    font-family: Sailec;
+    font-size: 10rem;
+    color:white;
+    z-index: 10;
+  }
+  #text2{
+    position: relative;
+    font-family: Sailec;
+    font-size: 1.1rem;
+    color:white;
+    z-index: 10;
+  }
+
+  /*discover more button */
+  #more_bout{
+    /*remove button styling */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    position: absolute;
+    font-family: Sailec;
+    font-size: 1.1rem;
+    color:white;
+    z-index: 10;
+    bottom: 5rem;
+    right:5rem;
+  }
+
+  #more_bout > a{
+    color: white;
+  }
+
+  /*discover more button hover effect */
+  #more_bout span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #more_bout span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #more_bout:hover span {
+    padding-right: 25px;
+  }
+  
+  #more_bout:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* arrow css */
+  .right_arr{
+    position: fixed;
+    right:2rem;
+    color:rgba(255, 255, 255, 0.855); 
+    scale:1.5;
+    height: 2rem;
+    z-index: 100;
+    top:50%;
+    transition: all .3s ease-in-out;
+  }
+
+  .left_arr{
+    position: fixed;
+    left:2rem;
+    color:rgba(255, 255, 255, 0.855); 
+    scale:1.5;
+    height: 2rem;
+    z-index: 100;
+    top:50%;
+    transition: all .3s ease-in-out;
+    transform: translate(-5rem, 0rem);
+  }
+
+  .left_arr:hover{
+    color: white;
+    scale: 1.55;
+  }
+  .right_arr:hover{
+    color: white;
+    scale: 1.55;
+  }
+
+ /* phone */
+@media only screen and (max-width: 800px) {
+    #text1{
+      font-size: 10vw;
+    }
+    #text2{
+      font-size: 3vw;
+      padding: 1rem;
+      text-align: center;
+    }
+    #more_bout{
+      font-size: 1rem;
+      padding: 1rem;
+      width:12rem;
+      text-align: center;
+      bottom: 5rem;
+      right:calc(50vw - 6rem);
+    }
+    .right_arr{
+      right:1rem;
+      scale:1;
+      top:75%;
+    }
+  
+    .left_arr{
+      left:1rem;
+      scale:1;
+      top:75%;
+    }
+  
+    .left_arr:hover{
+      color: white;
+      scale: 1.05;
+    }
+    .right_arr:hover{
+      color: white;
+      scale: 1.05;
+    }
+
+  }
+
+
+/* tablet*/
+  @media only screen and (min-width: 800px) {
+    #text1{
+      font-size: 4.5rem;
+    }
+    #text2{
+      font-size: .9rem;
+    }
+    #more_bout{
+      font-size: .9rem;
+    }
+
+  }
+/* laptop */
+  @media only screen and (min-width: 1200px) {
+    #text1{
+      font-size: 7rem;
+    }
+    #text2{
+      font-size: .9rem;
+    }
+    #more_bout{
+      font-size: .9rem;
+    }
+
+  }
+/* desktop */
+  @media only screen and (min-width: 1500px) {
+    #text1{
+      font-size: 9rem;
+    }
+    #text2{
+      font-size: 1.1rem;
+    }
+    #more_bout{
+      font-size: 1.1rem;
+    }
+  }
+/* desktop/tv */
+  @media only screen and (min-width: 2000px) {
+    #text1{
+      font-size: 15rem;
+    }
+    #text2{
+      font-size: 1.6rem;
+    }
+    #more_bout{
+      font-size: 1.6rem;
+    }
+  }
+
+  

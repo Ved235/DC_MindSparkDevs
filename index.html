@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----- import css ------->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <!----- import font awsome for icons ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nikola Tesla</title>
+</head>
+
+<body>
+    <!----- wrapper div to help in image animations ------->
+    <div id="index" style="height: 100vh;width: 100vw;">
+        <!----- header ------->
+        <header>
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <!----- header buttons for closing and opening it ------->
+                <i class="fa-sharp fa-solid fa-bars fa-2xl" id="bars" onclick="menu_pressed()"></i>
+                <i class="fa-solid fa-xmark fa-2xl" id="cross" onclick="menu_pressed()"></i>
+
+            </div>
+            <!----- header background ------->
+            <div id="circle_zoom"></div>
+
+            <!----- navbar ------->
+            <div class="navbar" id="navbar">
+                <div id="nav_cont">
+
+                    <div id="up3">
+                        <div id="nav_image"></div>
+                    </div>
+
+                    <div id="up2">
+                        <ul id="nav_elements1">
+                            <li onmouseenter="hover('tesla')"><a href="index.html" class="nav_link"
+                                    style="color:white;">Home</a></li>
+                            <li onmouseenter="hover('tesla')"><a href="tesla.html" class="nav_link">About Tesla</a></li>
+                            <li onmouseenter="hover('tesla')"><a href="Timeline.html" class="nav_link">Timeline</a></li>
+                            <li onmouseenter="hover('us')"><a href="ourteam.html" class="nav_link">Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="up1">
+                        <ul id="nav_elements">
+                            <li onmouseenter="hover('tesla_coil')"><a href="/inventions/teslacoil.html" class="nav_link"
+                                    id="tesla_coil">Tesla Coil</a></li>
+                            <li onmouseenter="hover('tesla_turbine')"><a href="/inventions/teslaturbine.html"
+                                    class="nav_link" id="tesla_turbine">Tesla Turbine</a></li>
+                            <li onmouseenter="hover('world_of_ac')"><a href="/inventions/acpower.html" class="nav_link"
+                                    id="world_of_ac">The World of AC power</a></li>
+                            <li onmouseenter="hover('induction_motor')"><a href="/inventions/inductionmotor.html"
+                                    class="nav_link" id="induction_motor">Induction Motor</a></li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-------------arrows for screen change call js function for changing slide------------>
+        <i class="fa-solid fa-arrow-right right_arr fa-2xl" id="right_slide" onclick="shiftScreen(1,0)"></i>
+        <i class="fa-solid fa-arrow-left left_arr fa-2xl" id="left_slide" onclick="shiftScreen(0,0)"></i>
+        <!------ lower buttons for screen change use css to change slide and call js function to store slide change and arrow visibility------->
+        <div class="parallax">
+            <input type="radio" name="slider" class="slide-radio1" checked id="slider_1" onclick="shiftScreen(0,1)">
+            <input type="radio" name="slider" class="slide-radio2" id="slider_2" onclick="shiftScreen(0,2)">
+            <input type="radio" name="slider" class="slide-radio3" id="slider_3" onclick="shiftScreen(0,3)">
+            <input type="radio" name="slider" class="slide-radio4" id="slider_4" onclick="shiftScreen(0,4)">
+            <input type="radio" name="slider" class="slide-radio5" id="slider_5" onclick="shiftScreen(0,5)">
+
+
+            <div class="parallax-pagination">
+                <label for="slider_1" class="page1"></label>
+                <label for="slider_2" class="page2"></label>
+                <label for="slider_3" class="page3"></label>
+                <label for="slider_4" class="page4"></label>
+                <label for="slider_5" class="page5"></label>
+
+            </div>
+            <!----- first slide bout nikola tesla ------->
+            <div class="structure-screen slider slide-1">
+                <div id="text1">Nikola Tesla</div>
+                <div id="text2">A brilliant mind that lit up the world with his electrifying innovations.</div>
+                <button id="more_bout"><a href=""><span>Discover More</span></a></button>
+            </div>
+            <!----- seond slide bout tesla coil ------->
+            <div class="structure-screen slider slide-2 move4" style="background-image: url('public/images/tesla_coil_low_poly_4.png');
+                    background-color: #4054FF;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    background-position:50% 95%;
+                    ">
+
+                <div id="text1" style="color:#ffffff;">Tesla Coil</div>
+                <div id="text2">Explore the Electrifying World of Tesla Coils: Where Science Meets Spectacle!</div>
+                <button id="more_bout"><a href="inventions/teslacoil.html"><span>Discover More</span></a></button>
+            </div>
+            <!----- third slide bout the world of AC power ------->
+            <div class="structure-screen slider slide-3 move3" style="background-image: url('public/images/ac_power_1.png');
+                        background-color: #4054FF;
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                        background-position: 100% 90%;
+                        ">
+
+                <div id="text1">AC Power</div>
+                <div id="text2"> Energizing the World with Electrifying Ideas!</div>
+                <button id="more_bout"><a href="inventions/acpower.html"><span>Discover More</span></a></button>
+            </div>
+            <!----- fourth slide bout the induction motor ------->
+            <div class="structure-screen slider slide-4 move6" style="background-image: url('public/images/induction_motor_1.png');
+                    background-color: #4054FF;
+                    background-size:cover ;
+                    background-repeat: no-repeat;
+                    background-position: 50% 30%;
+                    ">>
+
+                <div id="text1">Induction Motor</div>
+                <div id="text2">The unsung hero of industry: the quiet force behind motion – the induction motor.</div>
+                <button id="more_bout"><a href="inventions/inductionmotor.html"><span>Discover More</span></a></button>
+            </div>
+            <!----- fifth slide bout the tesla turbine  ------->
+            <div class="structure-screen slider slide-5 move5" style="background-image: url('public/images/tesla_turbine_1.png');
+                    background-color: #4054FF;
+                    background-size:cover ;
+                    background-repeat: no-repeat;
+                    background-position: 50% 90%;
+                    ">
+
+                <div id="text1">Tesla Turbine</div>
+                <div id="text2"> A whirlwind of innovation in fluid dynamics.</div>
+                <button id="more_bout"><a href="inventions/teslaturbine.html"><span>Discover More</span></a></button>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+<!----- jquery import ------->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<!----- js for header animations ------->
+<script src="header.js"></script>
+<!----- js for slide background move animations and slide animations ------->
+<script>
+    $(document).ready(function ($) {
+        $("#index").mousemove(function (e) {
+            var mouseX = e.pageX;
+            var mouseY = e.pageY;
+            var offX = -mouseX / $('#index').width();
+            var offY = -mouseY / $('#index').height();
+            // for ac power image
+            $(".move3").each(function (index, element) {
+                var translateX = 85 - offX * 12; 
+                var translateY = 90 - offY * 10; 
+                if($( window ).width() > $( window ).height()*1.5)
+                {
+                    element.style = "background-image: url('public/images/ac_power_1.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+                }
+                else{  
+                    element.style = "background-image: url('public/images/ac_power_1.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position:85% 90%";
+                }
+                
+            });
+            // for tesla coil image
+            $(".move4").each(function (index, element) {
+                var translateX = 50 - offX * 12; 
+                var translateY = 85 - offY * 5; 
+                if($( window ).width() > $( window ).height())
+                {
+                    element.style = "background-image: url('public/images/tesla_coil_low_poly_4.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+                }
+                else{
+                    element.style = "background-image: url('public/images/tesla_coil_low_poly_4.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position:50% 100%";
+                }
+                
+            });
+            // for image of tesla turbine
+            $(".move5").each(function (index, element) {
+                var translateX = 50 - offX * 12; 
+                var translateY = 90 - offY * 5; 
+                if($( window ).width() > $( window ).height())
+                {
+                    element.style = "background-image: url('public/images/tesla_turbine_1.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+                }
+                else{
+                    element.style = "background-image: url('public/images/tesla_turbine_1.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position: 50% 90%";
+                }
+                
+            });
+            // for image of induction motor
+            $(".move6").each(function (index, element) {
+                var translateX = 50 - offX * 12; 
+                var translateY = 30 - offY * 5; 
+                if($( window ).width() > $( window ).height())
+                {
+                    element.style = "background-image: url('public/images/induction_motor_1.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+                }
+                else{
+                    element.style = "background-image: url('public/images/induction_motor_1.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position: center";
+                }
+                
+            });
+        });
+       
+    });
+    // for responsiveness
+    $(window).on('resize', function(){
+       
+        var offX = 0;
+        var offY = 0;
+        // for ac power image
+        $(".move3").each(function (index, element) {
+            var translateX = 85 - offX * 12; 
+            var translateY = 90 - offY * 10; 
+            if($( window ).width() > $( window ).height()*1.5)
+            {
+                element.style = "background-image: url('public/images/ac_power_1.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+            }
+            else{  
+                element.style = "background-image: url('public/images/ac_power_1.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position:85% 90%";
+            }
+            
+        });
+        // for tesla coil image
+        $(".move4").each(function (index, element) {
+            var translateX = 50 - offX * 12; 
+            var translateY = 85 - offY * 5; 
+            if($( window ).width() > $( window ).height())
+            {
+                element.style = "background-image: url('public/images/tesla_coil_low_poly_4.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+            }
+            else{
+                element.style = "background-image: url('public/images/tesla_coil_low_poly_4.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position:50% 100%";
+            }
+            
+        });
+        // for image of tesla turbine
+        $(".move5").each(function (index, element) {
+            var translateX = 50 - offX * 12; 
+            var translateY = 90 - offY * 5; 
+            if($( window ).width() > $( window ).height())
+            {
+                element.style = "background-image: url('public/images/tesla_turbine_1.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+            }
+            else{
+                element.style = "background-image: url('public/images/tesla_turbine_1.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position: 50% 90%";
+            }
+            
+        });
+        // for image of induction motor
+        $(".move6").each(function (index, element) {
+            var translateX = 50 - offX * 12; 
+            var translateY = 30 - offY * 5; 
+            if($( window ).width() > $( window ).height())
+            {
+                element.style = "background-image: url('public/images/induction_motor_1.png');background-color:#4054FF;background-size:110% ;background-repeat: no-repeat;background-position: " + translateX + "% " + translateY + "%";
+            }
+            else{
+                element.style = "background-image: url('public/images/induction_motor_1.png');background-color:#4054FF;background-size:cover ;background-repeat: no-repeat;background-position: center";
+            }
+            
+        });
+    });
+    
+
+    // store the slide
+    prev = 1;
+    function shiftScreen(a , b) {
+        // change slide on button press
+        if(b == 0)
+        {
+            if (a == 1) {
+                if (prev == 4) {
+                    document.getElementById('right_slide').style = "transform: translate(5rem, 0rem);";
+                    prev++;
+                    document.getElementById("slider_" + prev).checked = true;
+                }
+                else if (prev == 1) {
+                    document.getElementById('left_slide').style = "transform: translate(0rem, 0rem);";
+                    prev++;
+                    document.getElementById("slider_" + prev).checked = true;
+                }
+                else {
+                    prev++;
+                    document.getElementById("slider_" + prev).checked = true;
+                }
+
+            }
+            else {
+                if (prev == 2) {
+                    document.getElementById('left_slide').style = "transform: translate(-5rem, 0rem);";
+                    prev--;
+                    document.getElementById("slider_" + prev).checked = true;
+                }
+                else if (prev == 5) {
+                    document.getElementById('right_slide').style = "transform: translate(0rem, 0rem);";
+                    prev--;
+                    document.getElementById("slider_" + prev).checked = true;
+                }
+                else {
+                    prev--;
+                    document.getElementById("slider_" + prev).checked = true;
+                }
+            }
+        }
+        else{ // change current slide and also change the visibilty of arrows on press of the lower slider bar
+            prev = b;
+            
+            if (prev == 5) {
+                document.getElementById('right_slide').style = "transform: translate(5rem, 0rem);";
+                document.getElementById('left_slide').style = "transform: translate(0rem, 0rem);";
+            }
+            else if (prev == 1) {
+                document.getElementById('left_slide').style = "transform: translate(-5rem, 0rem);";
+                document.getElementById('right_slide').style = "transform: translate(0rem, 0rem);";
+            }
+            else {
+                document.getElementById('left_slide').style = "transform: translate(0rem, 0rem);";
+                document.getElementById('right_slide').style = "transform: translate(0rem, 0rem);";
+            }
+        }
+    }
+</script>
+
+</html>

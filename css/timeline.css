@@ -1,0 +1,37 @@
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #352F44;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > div > .image {
+  width: 41vh;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-caption {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.image-text {
+  font-size: 12px;
+  color: #666;
+}
+

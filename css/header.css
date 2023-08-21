@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300&family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+header{
+    height:0px;
+}
+
+.logo{
+    position: fixed;
+    height: 10rem;
+    width:15rem;
+    background-size:cover;
+    background-image: url("/images/logo.png");
+    background-position: -1rem;
+    top:0rem;
+    z-index: 1001;
+}
+
+.menu{
+    color: white;
+    position: fixed;
+    right:3rem;
+    top: 4rem;
+    display: block;
+    z-index: 1001;
+}
+
+
+#circle_zoom{
+
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    right:3.875rem;
+    top: 4.5rem;
+    transform-origin: 50% 50%;
+    border-radius: 10000px;
+    background-color: rgb(0, 0, 0);
+    transition: all 500ms cubic-bezier(0.275, 0.105, 0.730, 0.950);
+    z-index: 1000;
+}
+
+#cross{
+    
+    color: rgba(255, 255, 255, 0);
+    position: fixed;
+    right:3.125rem;
+    top: 4.5rem;
+    z-index: 1001;
+    
+}
+
+
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+/*onclick navbar css */
+
+
+
+/*inventions (second list)*/
+#nav_elements{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+#nav_elements > li{
+    transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+    width: 20rem;
+    padding-left: 1rem;
+}
+
+#nav_elements > li > a{
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    
+}
+
+/* box hover effect */
+#nav_elements > li:hover {
+    box-shadow: inset 20rem 0 0 0 #ffffff;
+}
+#nav_elements>li:hover .nav_link{
+    color: rgb(0, 0, 0);
+}
+
+
+/*general nav items (first list)*/
+#nav_elements1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#nav_elements1 > li{
+    transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+    width: 15rem;
+    padding-left: 1rem;
+}
+
+#nav_elements1 > li > a{
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+    font-family: 'Poppins';
+    font-size: 2.2rem;
+    position: relative;
+}
+
+/* underline hover effect */
+#nav_elements1>li>a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+#nav_elements1>li>a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+#nav_elements1>li>a:hover{
+    color: rgb(255, 255, 255);
+}
+.current{
+    color: white;
+}
+
+
+
+/* general navbar and image*/
+.navbar{
+    position: fixed;
+    width:100%;
+    top:10rem;
+    height:25rem;
+    z-index: 10000;
+    transform: translateY(calc(-100% - 10rem));
+    transition: all 10ms ease-in-out;
+}
+#nav_cont{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: row;
+    z-index: 10000;
+    
+}
+#nav_image{
+    background-size:cover;
+    background-image: url("/images/tesla.jpg");
+    transition: all .3s ease-in-out;
+    width:20rem;
+    height:25rem;
+    box-shadow: 0 0 8px 8px black inset;
+}
+
+/* opening animation for navbar */
+#up1{
+    transition: all 370ms ease-in-out;
+    transform: translateY(calc(-100% - 10rem));
+}
+#up2{
+    transition: all 370ms ease-in-out;
+    transform: translateY(calc(-100% - 10rem));
+}
+#up3{
+    transition: all 370ms ease-in-out;
+    transform: translateY(calc(-100% - 10rem));
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .logo{
+        height: 6rem;
+        width:10rem;
+    }
+    .menu{
+        right:1rem;
+        top: 2rem;
+        scale: .75;
+    }
+    #circle_zoom{
+        right:1.8rem;
+        top: 2.5rem;
+    }
+    
+    #cross{
+        right:.25rem;
+        top: .75rem;
+    }
+    /*inventions (second list)*/
+    #nav_elements{
+        padding-left: .1rem;
+        gap: 1rem;
+    }
+
+
+    #nav_elements > li{
+        transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+        width: 30vw;
+        padding-left: 1rem;
+    }
+
+    #nav_elements > li > a{
+        font-size: 1rem;
+    }
+
+    /* box hover effect */
+    #nav_elements > li:hover {
+        box-shadow: inset 30vw 0 0 0 #ffffff;
+    }
+
+
+
+    /*general nav items (first list)*/
+    #nav_elements1{
+        gap: 1rem;
+        padding-left: .2rem;
+    }
+
+    #nav_elements1 > li{
+        transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+        width: 30vw;
+    
+    }
+
+    #nav_elements1 > li > a{
+        font-size: 1rem;
+    }
+
+    /* underline hover effect */
+    #nav_elements1>li>a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    #nav_image{
+        display: none;
+    }
+
+    
+}
+

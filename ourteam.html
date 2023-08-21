@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----- import css ------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/ourteam.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+
+    <title>Timeline</title>
+  </head>
+  <body>
+    <!----- header ------->
+    <header>
+        <div class="logo">
+        </div>
+        <div class="menu">
+            <!----- header buttons for closing and opening it ------->
+            <i class="fa-sharp fa-solid fa-bars fa-2xl" id="bars" onclick="menu_pressed()"></i>
+            <i class="fa-solid fa-xmark fa-2xl" id="cross" onclick="menu_pressed()"></i>
+
+        </div>
+        <!----- header background ------->
+        <div id="circle_zoom"></div>
+
+        <!----- navbar ------->
+        <div class="navbar" id="navbar">
+            <div id="nav_cont">
+
+                <div id="up3">
+                    <div id="nav_image"></div>
+                </div>
+
+                <div id="up2">
+                    <ul id="nav_elements1">
+                        <li onmouseenter="hover('tesla')"><a href="index.html" class="nav_link"
+                                >Home</a></li>
+                        <li onmouseenter="hover('tesla')"><a href="tesla.html" class="nav_link">About Tesla</a></li>
+                        <li onmouseenter="hover('tesla')"><a href="Timeline.html" class="nav_link" >Timeline</a></li>
+                        <li onmouseenter="hover('us')"><a href="" class="nav_link" style="color:white;">Our Team</a></li>
+                    </ul>
+                </div>
+
+                <div id="up1">
+                    <ul id="nav_elements">
+                        <li onmouseenter="hover('tesla_coil')"><a href="/inventions/teslacoil.html" class="nav_link"
+                                id="tesla_coil" >Tesla Coil</a></li>
+                        <li onmouseenter="hover('tesla_turbine')"><a href="/inventions/teslaturbine.html"
+                                class="nav_link" id="tesla_turbine" >Tesla Turbine</a></li>
+                        <li onmouseenter="hover('world_of_ac')"><a href="/inventions/acpower.html" class="nav_link"
+                                id="world_of_ac">The World of AC power</a></li>
+                        <li onmouseenter="hover('induction_motor')"><a href="/inventions/inductionmotor.html"
+                                class="nav_link" id="induction_motor">Induction Motor</a></li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+      <!----- wrapper for images ------->
+      <div class="wrapper">
+        <h1>Our Team</h1>
+        <div class="our_team">
+            <div class="team_member">
+              <div class="member_img">
+                 <img src="images/ojas.png" alt="our_team">
+              </div>
+              <h3>Ojas Jain</h3>
+              <span>CSS and Html</span>
+              <p>Ojas Jain is a skilled web developer renowned for his expertise in HTML and CSS, creating visually captivating and user-friendly websites. His work combines creativity and precision to craft exceptional online experiences.</p>
+            </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="images/vedant.png" alt="our_team">
+            
+              </div>
+              <h3>Vedant Singhal</h3>
+              <span>JS, Backend and website design</span>
+              <p>Vedant Singhal is a versatile web developer and designer who excels in both backend development and website design, seamlessly merging functionality and aesthetics for exceptional online experiences.</p>
+          </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="images/rian.png" alt="our_team">
+              </div>
+              <h3>Rian</h3>
+              <span>JS, Backend and Html</span>
+              <p>Rian is a multi-talented web developer proficient in JavaScript, backend development, and HTML, delivering cohesive and dynamic websites that seamlessly integrate user-friendly interfaces with robust functionality.</p>
+          </div>
+        </div>
+    </div>	
+    
+  </div>  
+  </body>
+
+  <!----- import js files ------->
+  <!----- js for header animations ------->
+  <script src="header.js"></script>
+  <!----- js for smooth scrolling and image zoom ------->
+  <script type="module" src="main.js"></script>
+ 
+</html>
